@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua Kimaiyo | Web Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: rgb(249, 250, 251);
+      color: rgb(30, 41, 59);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      background: rgb(30, 58, 138);
+      color: rgb(255, 255, 255);
+    }
+
+    header nav a {
+      color: rgb(255, 255, 255);
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    header nav a:hover { color: rgb(16, 185, 129); }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #1e3a8a, #10b981);
+      color: white;
+    }
+
+    .hero h1 { font-size: 2.5rem; font-family: 'Poppins', sans-serif; }
+    .hero p { margin: 1rem 0; font-size: 1.2rem; }
+    .btn {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.7rem 1.5rem;
+      background: rgb(255, 255, 255);
+      color: #1e3a8a;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn:hover { background: rgb(16, 185, 129); color: white; }
+
+    section { padding: 3rem 5%; }
+
+    .highlights, .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+    .about img {
+      width: 200px;
+      border-radius: 50%;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin: 0.5rem 0;
+      border-radius: 8px;
+      border: 1px solid rgb(203, 213, 225);
+    }
+
+    form button {
+      background: rgb(30, 58, 138);
+      color: white;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    form button:hover { background: rgb(16, 185, 129); }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgb(30, 58, 138);
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+
+     <div class="logo">
+<img src="images/images/unit.jpg" alt="Mr Web logo" style="max-width: 95px;">
+  </div>
+
+    <h2>Joshua Kimaiyo</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Creative Web Designer from Kenya</h1>
+    <p>I design clean, modern, and responsive websites for businesses and individuals.</p>
+    <a href="#portfolio" class="btn">View My Work</a>
+    <a href="#contact" class="btn">Contact Me</a>
+  </section>
+
+  <!-- Highlights -->
+  <section>
+    <div class="highlights">
+      <div class="card">📱 Responsive</div>
+      <div class="card">⚡ Fast Loading</div>
+      <div class="card">🎨 Creative UI</div>
+      <div class="card">🔍 SEO Ready</div>
+    </div>
+  </section>
+
+  <!-- About -->
+<section id="about">
+  <div class="about">
+    <img src="images/images/josh.jpeg" alt="Mr Web Designer">
+    <div>
+      <h2>About Me</h2>
+      <p>Hello! I’m <strong>Joshua Kimaiyo</strong>, a passionate web designer based in Kenya. 
+         I specialize in building clean, modern, and user-friendly websites that help businesses 
+         and individuals shine online.</p>
+         
+      <p>My journey began with curiosity and creativity — I started experimenting with design 
+         in school and quickly discovered how powerful the web can be for connecting people 
+         and ideas. Over time, I’ve grown my skills and worked on projects that blend 
+         functionality with beautiful design.</p>
+         
+      <p>When I’m not designing, you’ll probably find me playing football ⚽ or listening to music 🎶. 
+         I believe every project is a chance to learn something new and create something meaningful.</p>
+      
+      <p><strong>Core Skills:</strong> HTML, CSS, JavaScript</p>
+      
+      <!-- Call to Action -->
+      <p style="margin-top:1.5rem; font-weight:600; color:#1e3a8a;">
+        🚀 Let’s work together — I’m always open to new projects and collaborations!
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio">
+  <h2 style="text-align:center; margin-bottom: 2rem;">My Work</h2>
+  <div class="portfolio">
+    
+    <div class="card">
+      <img src="https://source.unsplash.com/400x250/?website,design" alt="Business Website" style="width:100%; border-radius:8px;">
+      <h3 style="margin:1rem 0 0.5rem;">Business Website</h3>
+      <p>Designed a clean, responsive business site for a local startup.</p>
+      <a href="#" class="btn" style="margin-top:0.5rem;">View Project</a>
+    </div>
+    
+    <div class="card">
+      <img src="https://source.unsplash.com/400x250/?app,ui" alt="Mobile App UI" style="width:100%; border-radius:8px;">
+      <h3 style="margin:1rem 0 0.5rem;">Mobile App UI</h3>
+      <p>Created a modern UI concept for a mobile booking application.</p>
+      <a href="#" class="btn" style="margin-top:0.5rem;">View Project</a>
+    </div>
+    
+    <div class="card">
+      <img src="https://source.unsplash.com/400x250/?portfolio,web" alt="Portfolio Website" style="width:100%; border-radius:8px;">
+      <h3 style="margin:1rem 0 0.5rem;">Personal Portfolio</h3>
+      <p>Developed a personal portfolio for a photographer client in Nairobi.</p>
+      <a href="#" class="btn" style="margin-top:0.5rem;">View Project</a>
+    </div>
+    
+    <div class="card">
+      <img src="https://source.unsplash.com/400x250/?ecommerce,shop" alt="E-commerce Website" style="width:100%; border-radius:8px;">
+      <h3 style="margin:1rem 0 0.5rem;">E-commerce Website</h3>
+      <p>Built an online store prototype with a clean shopping cart system.</p>
+      <a href="#" class="btn" style="margin-top:0.5rem;">View Project</a>
+    </div>
+    
+  </div>
+</section>
+
+
+  <!-- Services -->
+<section>
+  <h2 style="text-align:center; margin-bottom: 2rem;">Services</h2>
+  <div class="services">
+    
+    <div class="card">
+      <h3>🌐 Web Design</h3>
+      <p>I create clean, modern, and professional websites tailored to your brand and business goals.</p>
+    </div>
+    
+    <div class="card">
+      <h3>📱 Mobile Friendly</h3>
+      <p>All websites I design are fully responsive, ensuring they look great on phones, tablets, and desktops.</p>
+    </div>
+    
+    <div class="card">
+      <h3>🎨 UI/UX Prototyping</h3>
+      <p>I design intuitive interfaces and user flows that make websites easy to navigate and enjoyable to use.</p>
+    </div>
+    
+    <div class="card">
+      <h3>🔄 Website Redesign</h3>
+      <p>I transform outdated websites into modern, fast, and engaging platforms that attract more visitors.</p>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2 style="text-align:center; margin-bottom: 2rem;">Contact Me</h2>
+  
+  <form style="max-width:600px; margin:auto;">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  
+  <!-- Quick Contact Buttons -->
+  <div style="text-align:center; margin-top:2rem;">
+    <a href="mailto:kimaiyojoshua778@gmail.com" class="btn">📧 Email Me</a>
+    <a href="https://wa.me/254707591261" target="_blank" class="btn">💬 WhatsApp Me</a>
+  </div>
+  
+  <!-- Social Media Links -->
+  <div style="text-align:center; margin-top:1.5rem;">
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" style="margin:0 10px; text-decoration:none;">🔗 LinkedIn</a>
+    <a href="https://github.com/yourusername" target="_blank" style="margin:0 10px; text-decoration:none;">💻 GitHub</a>
+    <a href="https://www.instagram.com/yourusername" target="_blank" style="margin:0 10px; text-decoration:none;">📸 Instagram</a>
+    <a href="https://twitter.com/yourusername" target="_blank" style="margin:0 10px; text-decoration:none;">🐦 Twitter</a>
+    <a href="https://tiktok.com/yourusername" target="_blank" style="margin:0 10px; text-decoration:none;"> Tiktok</a>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Joshua Kimaiyo | Made with ❤️ in Kenya</p>
+  </footer>
+
+</body>
+</html>
+
+
